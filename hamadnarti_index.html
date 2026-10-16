@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سوق حامدنارتي الإلكتروني</title>
+    <!-- خط تجوال المميز للغة العربية -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- مكتبة أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #00838f;
+            --secondary: #ffb300;
+            --accent: #25d366;
+            --bg: #f4f7f6;
+            --text: #2c3e50;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* الهيدر والعنوان الرئيسي */
+        header {
+            background: linear-gradient(135deg, #004d40, #00838f);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            border-bottom: 5px solid var(--secondary);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #e0f7fa;
+        }
+
+        /* حاوية المحلات */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* تصميم كرت المحل */
+        .card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        /* صورة المحل */
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .shop-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #004d40;
+            margin-bottom: 10px;
+        }
+
+        .manager-info {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .phone-info {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            direction: ltr;
+            justify-content: flex-end;
+        }
+
+        /* زر الواتساب */
+        .btn-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1eb954;
+        }
+
+        /* الفوتر وحقوق المبرمج */
+        footer {
+            background-color: #1a252f;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 50px;
+            border-top: 4px solid var(--secondary);
+        }
+
+        .developer-name {
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            color: #ffb300;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>سوق حامدنارتي الرقمي</h1>
+        <p>دليلك الأول لجميع محلات وخدمات حامدنارتي</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+
+            <!-- محل 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=500&auto=format&fit=crop" alt="بقالة أبو أحمد سنتر" class="card-img">
+                <div class="card-body">
+                    <div>
+                        <h2 class="shop-title">بقالة أبو أحمد سنتر</h2>
+                        <p class="manager-info"><i class="fa-solid fa-user-tie"></i> إدارة: عبدالدائم</p>
+                        <p class="phone-info"><i class="fa-solid fa-phone"></i> 0116752390</p>
+                    </div>
+                    <a href="https://wa.me/249116752390?text=السلام%20عليكم،%20تواصل%20من%20خلال%20موقع%20سوق%20حامدنارتي" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i> تواصل عبر الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <!-- محل 2 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=500&auto=format&fit=crop" alt="محلات فتحي حامدنارتي للخدمات" class="card-img">
+                <div class="card-body">
+                    <div>
+                        <h2 class="shop-title">محلات فتحي حامدنارتي للخدمات</h2>
+                        <p class="manager-info"><i class="fa-solid fa-user-tie"></i> إدارة: سيف الدين</p>
+                        <p class="phone-info"><i class="fa-solid fa-phone"></i> 0124125226</p>
+                    </div>
+                    <a href="https://wa.me/249124125226?text=السلام%20عليكم،%20تواصل%20من%20خلال%20موقع%20سوق%20حامدنارتي" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i> تواصل عبر الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <!-- محل 3 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&auto=format&fit=crop" alt="محل مدثر فون" class="card-img">
+                <div class="card-body">
+                    <div>
+                        <h2 class="shop-title">محل مدثر فون</h2>
+                        <p class="manager-info"><i class="fa-solid fa-user-tie"></i> إدارة: مدثر</p>
+                        <p class="phone-info"><i class="fa-solid fa-phone"></i> 0900845706</p>
+                    </div>
+                    <a href="https://wa.me/249900845706?text=السلام%20عليكم،%20تواصل%20من%20خلال%20موقع%20سوق%20حامدنارتي" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i> تواصل عبر الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <!-- محل 4 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=500&auto=format&fit=crop" alt="محلات بكري سنتر" class="card-img">
+                <div class="card-body">
+                    <div>
+                        <h2 class="shop-title">محلات بكري سنتر</h2>
+                        <p class="manager-info"><i class="fa-solid fa-user-tie"></i> إدارة: بكري إدريس</p>
+                        <p class="phone-info"><i class="fa-solid fa-phone"></i> 0914676181</p>
+                    </div>
+                    <a href="https://wa.me/249914676181?text=السلام%20عليكم،%20تواصل%20من%20خلال%20موقع%20سوق%20حامدنارتي" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i> تواصل عبر الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <!-- محل 5 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=500&auto=format&fit=crop" alt="مجمع أولاد الترزي التجاري" class="card-img">
+                <div class="card-body">
+                    <div>
+                        <h2 class="shop-title">مجمع أولاد الترزي التجاري</h2>
+                        <p class="manager-info"><i class="fa-solid fa-user-tie"></i> إدارة: عثمان نجم الدين</p>
+                        <p class="phone-info"><i class="fa-solid fa-phone"></i> 0901223948</p>
+                    </div>
+                    <a href="https://wa.me/249901223948?text=السلام%20عليكم،%20تواصل%20من%20خلال%20موقع%20سوق%20حامدنارتي" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i> تواصل عبر الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <!-- محل 6 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=500&auto=format&fit=crop" alt="بقالة العمادة التجارية" class="card-img">
+                <div class="card-body">
+                    <div>
+                        <h2 class="shop-title">بقالة العمادة التجارية</h2>
+                        <p class="manager-info"><i class="fa-solid fa-user-tie"></i> إدارة: عماد مزمزة</p>
+                        <p class="phone-info"><i class="fa-solid fa-phone"></i> 0128104849</p>
+                    </div>
+                    <a href="https://wa.me/249128104849?text=السلام%20عليكم،%20تواصل%20من%20خلال%20موقع%20سوق%20حامدنارتي" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i> تواصل عبر الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <!-- محل 7 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500&auto=format&fit=crop" alt="محلات بتيتي فون" class="card-img">
+                <div class="card-body">
+                    <div>
+                        <h2 class="shop-title">محلات بتيتي فون</h2>
+                        <p class="manager-info"><i class="fa-solid fa-user-tie"></i> إدارة: بتيتي</p>
+                        <p class="phone-info"><i class="fa-solid fa-phone"></i> 0115626268</p>
+                    </div>
+                    <a href="https://wa.me/249115626268?text=السلام%20عليكم،%20تواصل%20من%20خلال%20موقع%20سوق%20حامدنارتي" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i> تواصل عبر الواتساب
+                    </a>
+                </div>
+            </div>
+
+            <!-- محل 8 -->
+            <div class="card">
+                <img src="
